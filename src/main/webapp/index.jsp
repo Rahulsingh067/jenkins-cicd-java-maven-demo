@@ -1,5 +1,5 @@
 <html>
 <body>
-<h2>Hello finally i completed my first CICD :-) </h2>
+<h1>Hello finally i completed my first CICD :-) </h1>
 </body>
 </html>
