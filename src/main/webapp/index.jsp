@@ -1,68 +1,77 @@
-<!-- templates/index.html -->
+<!-- templates/products.html -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Flask Web App</title>
+    <title>Shop - Products</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        h1 {
-            color: #333;
+            background-color: #f8f9fa;
+            padding: 20px;
         }
         .container {
-            max-width: 600px;
+            max-width: 900px;
             margin: 0 auto;
-        }
-        .form-container {
-            background-color: #f9f9f9;
+            background-color: #fff;
             padding: 20px;
             border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        input[type="text"], textarea {
-            width: 100%;
-            padding: 8px;
-            margin: 5px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
+        .product {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
         }
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
+        .product img {
+            max-width: 100px;
+            float: left;
+            margin-right: 20px;
+        }
+        .product h2 {
+            margin-top: 0;
+            font-size: 1.25rem;
+        }
+        .product p {
+            margin-bottom: 5px;
+        }
+        .product .btn {
+            background-color: #007bff;
+            color: #fff;
             border: none;
+            padding: 8px 16px;
             border-radius: 4px;
             cursor: pointer;
         }
-        button:hover {
-            background-color: #45a049;
+        .product .btn:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Simple Flask Web App</h1>
+        <h1>Products</h1>
         
-        <div class="form-container">
-            <form action="/submit" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="text" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                
-                <button type="submit">Submit</button>
-            </form>
+        <div class="product">
+            <img src="https://via.placeholder.com/150" alt="Product Image">
+            <h2>Product Name</h2>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Price: $19.99</p>
+            <button class="btn">Add to Cart</button>
         </div>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/150" alt="Product Image">
+            <h2>Another Product</h2>
+            <p>Description: Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <p>Price: $29.99</p>
+            <button class="btn">Add to Cart</button>
+        </div>
+        
+        <!-- Add more products as needed -->
+        
     </div>
 </body>
 </html>
