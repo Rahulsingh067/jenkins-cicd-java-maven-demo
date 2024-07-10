@@ -55,18 +55,18 @@
         <h1>Products</h1>
         
         <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Product Image">
-            <h2>Product Name</h2>
-            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Price: $19.99</p>
+            <img src="https://m.media-amazon.com/images/I/81CgtwSII3L._AC_UY218_.jpg" alt="Product Image">
+            <h2>Apple iPhone 15 Pro (256 GB)</h2>
+            <p>Description: Natural Titanium :-) </p>
+            <p>Price: $20</p>
             <button class="btn">Add to Cart</button>
         </div>
         
         <div class="product">
-            <img src="https://via.placeholder.com/150" alt="Product Image">
-            <h2>Another Product</h2>
-            <p>Description: Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-            <p>Price: $29.99</p>
+            <img src="https://m.media-amazon.com/images/I/71jG+e7roXL._SX679_.jpg" alt="Product Image">
+            <h2>Apple MacBook Air Laptop M1 chip</h2>
+            <p>Description: 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey</p>
+            <p>Price: $99</p>
             <button class="btn">Add to Cart</button>
         </div>
         
