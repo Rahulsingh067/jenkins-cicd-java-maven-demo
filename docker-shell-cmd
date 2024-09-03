@@ -1,6 +1,6 @@
 sudo -i
-docker stop tomcatapp
-docker rm tomcatapp
-docker rmi cicd:tapp1
+docker stop tomcatapp || true
+docker rm tomcatapp || true
+docker rmi cicd:tapp1 || true
 docker build -t cicd:tapp1 /var/jenkins/workspace/CICD
 docker run -p 8080:8080 -itd --name tomcatapp cicd:tapp1
