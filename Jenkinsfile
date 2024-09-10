@@ -34,12 +34,12 @@ pipeline {
       }
     }
   }
-      post {
+      /*post {
         always {
             // Clean up the workspace and running containers
             script {
                 cleanWs()
             }
         }
-    }
+    }*/
 }
