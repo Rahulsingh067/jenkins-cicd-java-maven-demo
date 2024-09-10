@@ -24,13 +24,13 @@ pipeline {
     stage('Deploy') {
       steps {
         //deploy war on tomcat server
-        sh '''''
+        sh '''
           docker stop tomcatapp || true
           docker rm tomcatapp || true
           docker rmi cicd:tapp1 || true
           docker build -t cicd:tapp1 /var/jenkins/workspace/pipeline
           docker run -p 8080:8080 -itd --name tomcatapp cicd:tapp1
-          '''''
+          '''
       }
     }
   }
