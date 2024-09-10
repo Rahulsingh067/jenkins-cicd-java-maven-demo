@@ -21,15 +21,26 @@ pipeline {
       }
 
     }
- /*   stage('Deploy') {
+    stage('Deploy') {
       steps {
         //deploy war on tomcat server
-        deploy adapters: [tomcat8(url: "${tomcatServerUrl}",
-            credentialsId: 'tomcat-credentials')],
-          war: 'target/*.war',
-          contextPath: 'pipeline-app'
-
+        sh '''''
+          docker stop tomcatapp || true
+          docker rm tomcatapp || true
+          docker rmi cicd:tapp1 || true
+          docker build -t cicd:tapp1 /var/jenkins/workspace/pipeline
+          docker run -p 8080:8080 -itd --name tomcatapp cicd:tapp1
+          '''''
       }
-    }*/
+    }
   }
+      post {
+        always {
+            // Clean up the workspace and running containers
+            script {
+                cleanWs()
+            }
+        }
+    }
+}
 }
